@@ -1,26 +1,50 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="relative">
+    <SideBar />
+    <NavBar />
+    <HeroSection />
+    <SecondHero />
+    <AboutUs />
+    <ContactUs />
+    <Footer />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import NavBar from "./components/NavBar.vue";
+import SideBar from "./components/SideBar.vue";
+import HeroSection from "./components/HeroSection.vue";
+import SecondHero from "./components/SecondHero.vue";
+import AboutUs from "./components/AboutUs.vue";
+import ContactUs from "./components/ContactUs.vue";
+import Footer from "./components/Footer.vue";
+import { useStore } from "vuex";
+import { onBeforeMount, onMounted } from "@vue/runtime-core";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
-</script>
+    NavBar,
+    SideBar,
+    HeroSection,
+    SecondHero,
+    AboutUs,
+    ContactUs,
+    Footer,
+  },
+  setup() {
+    const store = useStore();
+    const closeSideBar = () => {
+      store.commit("closeSideBar");
+    };
+    onBeforeMount(() => {
+      window.removeEventListener("resize", closeSideBar);
+    });
+    onMounted(() => {
+      window.addEventListener("scroll", closeSideBar);
+      window.addEventListener("resize", closeSideBar);
+    });
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+    return { closeSideBar };
+  },
+};
+</script>

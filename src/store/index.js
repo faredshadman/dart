@@ -1,14 +1,15 @@
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
 
 export default createStore({
   state: {
-  },
-  getters: {
+    sidebar: false,
   },
   mutations: {
+    toggleSideBar(state) {
+      state.sidebar = !state.sidebar;
+    },
+    closeSideBar(state) {
+      state.sidebar = false;
+    },
   },
-  actions: {
-  },
-  modules: {
-  }
-})
+});
