@@ -8,6 +8,7 @@ module.exports = {
       },
       colors: {
         yelo: "#D49C0A",
+        steam: "#282e39",
       },
       zIndex: {
         100: "100",

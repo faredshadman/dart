@@ -3,7 +3,7 @@
     :class="{
       black: addBackground,
     }"
-    class="bg-transparent fixed w-full top-0 cursor-pointer"
+    class="bg-transparent z-100 fixed w-full top-0 cursor-pointer"
   >
     <div
       class="max-w-7xl w-11/12 mx-auto py-2 flex justify-between items-center"
