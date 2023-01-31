@@ -82,7 +82,7 @@ export default {
 <style>
 .sidebar-enter-active,
 .sidebar-leave-active {
-  transition: 1s ease-in-out all;
+  transition: 0.5s ease-in-out all;
 }
 .sidebar-enter-from,
 .sidebar-leave-to {

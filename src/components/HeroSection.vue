@@ -1,5 +1,7 @@
 <template>
-  <section class="bg-hero bg-cover bg-repeat w-full h-screen bg-black">
+  <section
+    class="bg-hero bg-cover bg-repeat bg-center w-full h-screen bg-black"
+  >
     <main
       class="pt-40 max-w-7xl mx-auto w-11/12 flex items-center justify-center lg:justify-start"
     >
@@ -50,9 +52,15 @@
               Available: Late 2022 - Wishlist now!
             </h2>
             <button
-              class="bg-green-600 text-white transition-all duration-100 ease-in text-sm rounded-md hover:bg-green-500 p-2"
+              class="bg-green-600 text-white transition-all duration-100 ease-in text-sm rounded-md hover:bg-green-500"
             >
-              Add to Wishlist on Steam
+              <a
+                class="block p-2"
+                target="_blank"
+                href="https://store.steampowered.com/app/1334230/Revolution_The_Spark/"
+              >
+                Add to Wishlist on Steam
+              </a>
             </button>
           </div>
         </div>

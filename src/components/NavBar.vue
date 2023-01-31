@@ -3,20 +3,18 @@
     :class="{
       black: addBackground,
     }"
-    class="bg-transparent z-100 fixed w-full top-0 cursor-pointer"
+    class="bg-transparent z-99 fixed w-full top-0 cursor-pointer"
   >
     <div
-      class="max-w-7xl w-11/12 mx-auto py-2 flex justify-between items-center"
+      class="max-w-7xl w-11/12 font-poppins mx-auto py-2 flex justify-between items-center"
     >
       <!-- brand -->
-      <div class="flex items-center font-sans" @click="scrollToTop">
-        <div class="w-20 h-16">
-          <img src="@/assets/logo.png" alt="Dart Games Logo" />
-        </div>
+      <a href="#" class="flex items-center">
+        <img src="@/assets/logo.png" class="w-16 h-16" alt="Dart Games Logo" />
         <h1 class="text-white text-2xl tracking-widest font-medium">
           DARTS GAMES
         </h1>
-      </div>
+      </a>
       <!-- mobile menu -->
       <div
         @click="toggleSidear"
@@ -30,29 +28,29 @@
         <ul class="flex space-x-10 text-2xl">
           <li
             @click="scrollToTop"
-            class="px-4 py-1 hover:bg-gray-300 transition-all duration-200 ease-in-out hover:text-black rounded-lg"
+            class="hover:bg-gray-300 transition-all duration-200 ease-in-out hover:text-black rounded"
           >
-            Home
+            <a class="block px-4 py-1" href="#">Home</a>
           </li>
           <li
-            class="px-4 py-1 hover:bg-gray-300 transition-all duration-200 ease-in-out hover:text-black rounded-lg"
+            class="px-4 py-1 hover:bg-gray-300 transition-all duration-200 ease-in-out hover:text-black rounded"
           >
             Games
           </li>
           <li
-            class="py-1 px-4 hover:bg-gray-300 transition-all duration-200 ease-in-out hover:text-black rounded-lg"
+            class="py-1 px-4 hover:bg-gray-300 transition-all duration-200 ease-in-out hover:text-black rounded"
           >
             Jobs
           </li>
           <li
-            class="px-4 py-1 hover:bg-gray-300 transition-all duration-200 ease-in-out hover:text-black rounded-lg"
+            class="hover:bg-gray-300 transition-all duration-200 ease-in-out hover:text-black rounded"
           >
-            <a href="#about">About</a>
+            <a class="block px-4 py-1" href="#about">About</a>
           </li>
           <li
-            class="px-4 py-1 hover:bg-gray-300 transition-all duration-200 ease-in-out hover:text-black rounded-lg"
+            class="hover:bg-gray-300 transition-all duration-200 ease-in-out hover:text-black rounded"
           >
-            <a href="#contact"> Contact </a>
+            <a class="block px-4 py-1" href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
