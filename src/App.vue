@@ -49,7 +49,7 @@ export default {
       window.addEventListener("resize", closeSideBar);
     });
     const options = {
-      threshold: 0.9,
+      threshold: 0.5,
     };
     intersection(".intersection", options);
 
