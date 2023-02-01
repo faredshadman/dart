@@ -1,6 +1,6 @@
 <template>
   <section id="about" class="bg-black py-10 font-poppins text-white">
-    <div class="max-w-7xl mx-auto w-11/12 px-10">
+    <div class="max-w-7xl intersection mx-auto w-11/12 px-10">
       <h1 class="pb-10 text-center uppercase text-5xl">About Us</h1>
       <p class="text-lg md:text-2xl tracking-wide md:leading-10">
         Darts Games is an indie game developer studio from Azerbaijan. It is

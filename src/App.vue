@@ -11,6 +11,7 @@
 </template>
 
 <script>
+// components
 import NavBar from "./components/NavBar.vue";
 import SideBar from "./components/SideBar.vue";
 import HeroSection from "./components/HeroSection.vue";
@@ -18,8 +19,12 @@ import SecondHero from "./components/SecondHero.vue";
 import AboutUs from "./components/AboutUs.vue";
 import ContactUs from "./components/ContactUs.vue";
 import Footer from "./components/Footer.vue";
+// store
 import { useStore } from "vuex";
+// lifecycle methods
 import { onBeforeMount, onMounted } from "@vue/runtime-core";
+// composables
+import { intersection } from "./composables/intersection";
 export default {
   name: "App",
   components: {
@@ -43,6 +48,10 @@ export default {
       window.addEventListener("scroll", closeSideBar);
       window.addEventListener("resize", closeSideBar);
     });
+    const options = {
+      threshold: 0.9,
+    };
+    intersection(".intersection", options);
 
     return { closeSideBar };
   },

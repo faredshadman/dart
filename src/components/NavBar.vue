@@ -28,27 +28,27 @@
         <ul class="flex space-x-10 text-2xl">
           <li
             @click="scrollToTop"
-            class="hover:bg-gray-300 transition-all duration-200 ease-in-out hover:text-black rounded"
+            class="hover:bg-gray-300 tab transition-all duration-200 ease-in-out hover:text-black rounded"
           >
             <a class="block px-4 py-1" href="#">Home</a>
           </li>
           <li
-            class="px-4 py-1 hover:bg-gray-300 transition-all duration-200 ease-in-out hover:text-black rounded"
+            class="px-4 py-1 tab hover:bg-gray-300 transition-all duration-200 ease-in-out hover:text-black rounded"
           >
             Games
           </li>
           <li
-            class="py-1 px-4 hover:bg-gray-300 transition-all duration-200 ease-in-out hover:text-black rounded"
+            class="py-1 px-4 tab hover:bg-gray-300 transition-all duration-200 ease-in-out hover:text-black rounded"
           >
             Jobs
           </li>
           <li
-            class="hover:bg-gray-300 transition-all duration-200 ease-in-out hover:text-black rounded"
+            class="hover:bg-gray-300 tab transition-all duration-200 ease-in-out hover:text-black rounded"
           >
             <a class="block px-4 py-1" href="#about">About</a>
           </li>
           <li
-            class="hover:bg-gray-300 transition-all duration-200 ease-in-out hover:text-black rounded"
+            class="hover:bg-gray-300 tab transition-all duration-200 ease-in-out hover:text-black rounded"
           >
             <a class="block px-4 py-1" href="#contact">Contact</a>
           </li>

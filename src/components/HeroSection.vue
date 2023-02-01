@@ -10,7 +10,9 @@
           src="@/assets/spark.png"
           alt="Revolution the spark,image,spark,revolution,game"
         />
-        <div class="w-full relative font-sans bg-steam px-4 rounded-md py-2">
+        <div
+          class="w-full intersection relative font-sans bg-steam px-4 rounded-md py-2"
+        >
           <!-- header -->
           <div class="flex items-center text-white justify-between">
             <h1 class="text-xl">

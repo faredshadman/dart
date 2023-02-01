@@ -3,6 +3,20 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        fadetop: {
+          "0%": { transform: "translateY(100px)", opacity: "50%" },
+          "100%": { transform: "translateY(0)", opacity: "100%" },
+        },
+        fadeleft: {
+          "0%": { transform: "translateX(-50px)", opacity: "60%" },
+          "100%": { transform: "translateX(0)", opacity: "100%" },
+        },
+      },
+      animation: {
+        "fade-top": "fadetop 0.9s ease-in-out",
+        "fade-left": "fadeleft 0.9s ease-in-out",
+      },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
